@@ -200,6 +200,7 @@ echo "=========================================="
 echo " 8. ENABLING SERVICES                     "
 echo "=========================================="
 systemctl enable greetd
+systemctl enable NetworkManager
 
 echo "=========================================="
 echo " ✅ SYSTEM SETUP COMPLETE!                 "
