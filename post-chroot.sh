@@ -178,6 +178,7 @@ PACKAGES=(
     seatd-git
     solid-git
     sonnet-git
+    swww
     tllist-git
     ttf-joypixels
     vivaldi-snapshot
