@@ -17,6 +17,9 @@ useradd -m -G wheel "$USERNAME"
 echo "Set a password for $USERNAME:"
 passwd "$USERNAME"
 
+echo "Enter ROOT PASSWORD"
+passwd
+
 echo "=========================================="
 echo " 2. LOCALE & VCONSOLE STUFF               "
 echo "=========================================="
