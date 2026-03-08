@@ -32,22 +32,12 @@ pacman-key --lsign-key F3B607488DB35A47
 pacman -U --noconfirm 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst'
 pacman -U --noconfirm 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-mirrorlist-22-1-any.pkg.tar.zst'
 
-# Add CachyOS-v3 to the Live ISO pacman.conf
-cat <<EOT >> /etc/pacman.conf
-[cachyos-v3]
-Include = /etc/pacman.d/cachyos-v3-mirrorlist
-[cachyos-core-v3]
-Include = /etc/pacman.d/cachyos-v3-mirrorlist
-[cachyos-extra-v3]
-Include = /etc/pacman.d/cachyos-v3-mirrorlist
-[cachyos]
-Include = /etc/pacman.d/cachyos-mirrorlist
-EOT
+
 
 echo "=========================================="
 echo " 4. RUNNING PACSTRAP                      "
 echo "=========================================="
-pacstrap -K /mnt base base-devel linux-cachyos linux-cachyos-headers intel-ucode f2fs-tools git nano plymouth sudo
+pacstrap -K /mnt base base-devel intel-ucode f2fs-tools git nano plymouth sudo
 
 echo "=========================================="
 echo " 5. GENERATING FSTAB                      "
