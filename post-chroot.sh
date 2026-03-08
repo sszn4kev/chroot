@@ -4,8 +4,8 @@
 #  POST-CHROOT: SYSTEM, CONFIGS, & AUR APPS
 # ==========================================
 
-USERNAME="starrk"
-HOSTNAME="spder-v3"
+USERNAME="kevo"
+HOSTNAME="spderv3-git"
 ROOT_DEV="/dev/sda2"
 
 
