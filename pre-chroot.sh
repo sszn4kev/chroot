@@ -15,7 +15,7 @@ echo "=========================================="
 mkfs.vfat -F32 -n UEFI "$BOOT_DEV"
 
 # Adding the ROOT label and explicit F2FS compression features
-mkfs.f2fs -f -l ROOT -O extra_attr -O inode_checksum -O sb_checksum -O compression -C 16k "$ROOT_DEV"
+mkfs.f2fs -f -l ROOT -O extra_attr -O inode_checksum -O sb_checksum -O compression "$ROOT_DEV"
 
 echo "=========================================="
 echo " 2. MOUNTING FILE SYSTEMS                 "
